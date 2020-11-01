@@ -9,15 +9,22 @@ exports[`Form component renders Form 1`] = `
       class="create-sailor-form"
     >
       <div
+        class="form-header"
+      >
+        <h1>
+          Create Your Own Sailor Moon Character!
+        </h1>
+      </div>
+      <div
         class="sailor-name-box"
       >
         <label>
-          Enter your sailor name:
+          Enter your home planet, star or moon:
           <input
             name="sailor-name"
-            placeholder="Sailor Name"
+            placeholder="ex. Deimos"
             type="text"
-            value="Sailor Mars"
+            value="Sailor Neptune"
           />
         </label>
       </div>
@@ -28,22 +35,22 @@ exports[`Form component renders Form 1`] = `
           Enter your real name:
           <input
             name="real-name"
-            placeholder="Real Name"
+            placeholder=""
             type="text"
-            value="Michelle Stermitz"
+            value="Michiru Kaiou"
           />
         </label>
       </div>
       <div
-        class="real-name-box"
+        class="description-box"
       >
         <label>
           Give the fans a brief description of yourself:
           <input
             name="description"
-            placeholder="Please do not upset the fans"
+            placeholder=""
             type="text"
-            value="Coolest Sailor Moon character"
+            value="Michiru is exactly what a fairy tale princess would be like."
           />
         </label>
       </div>
@@ -54,9 +61,9 @@ exports[`Form component renders Form 1`] = `
           What's your number one "attack"?
           <input
             name="attack"
-            placeholder="attack"
+            placeholder="ex. Dead Scream"
             type="text"
-            value="Dry Sense of Humor"
+            value="Deep Submerge"
           />
         </label>
       </div>
@@ -67,9 +74,9 @@ exports[`Form component renders Form 1`] = `
           What's your zodiac sign?
           <input
             name="zodiac-sign"
-            placeholder="zodiac sign"
+            placeholder=""
             type="text"
-            value="Aries"
+            value="Pisces"
           />
         </label>
       </div>
@@ -77,7 +84,7 @@ exports[`Form component renders Form 1`] = `
         class="image-box"
       >
         <label>
-          Paste your image url here. Please keep it appropriate.:
+          Paste your image url here:
           <input
             name="image-url"
             placeholder=""
@@ -87,7 +94,7 @@ exports[`Form component renders Form 1`] = `
         </label>
       </div>
       <button
-        data-testid="button"
+        data-testid="form-button"
       >
         Submit
       </button>

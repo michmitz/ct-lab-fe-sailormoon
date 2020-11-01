@@ -7,12 +7,12 @@ describe('Form component', () => {
 
   it('renders Form', () => {
     const { asFragment } = render(<Form
-      sailorName="Sailor Mars"
-      realName="Michelle Stermitz"
-      description="Coolest Sailor Moon character"
-      attack="Dry Sense of Humor"
-      zodiacSign="Aries"
-      imgUrl="https://michellesite/michelle.png"
+      sailorName="Sailor Neptune"
+      realName="Michiru Kaiou"
+      description="Michiru is exactly what a fairy tale princess would be like."
+      attack="Deep Submerge"
+      zodiacSign="Pisces"
+      imgUrl="https://michirusite/michiru.png"
       onChange={() => {}}
       onSubmit={() => {}}
     />);
