@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { useSailors } from '../../../hooks/useSailors';
 import SailorItem from '../SailorItem/SailorItem';
 
@@ -9,7 +9,9 @@ const SailorList = () => {
 
   const sailorElements = sailors.map(sailor => (
     <li key={sailor.id}>
-      <SailorItem {...sailor} />
+      <Link to={`/sailors/${sailor.id}`}>
+        <SailorItem {...sailor} />
+      </Link>
     </li>
   ));
 
@@ -18,9 +20,6 @@ const SailorList = () => {
       {sailorElements}
     </ul>
   )
-};
-
-SailorList.propTypes = {
 };
 
 export default SailorList;

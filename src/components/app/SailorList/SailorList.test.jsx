@@ -2,6 +2,7 @@ import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import SailorList from './SailorList';
 import { getSailors } from '../../../services/sailorMoon-api';
+import { MemoryRouter } from 'react-router-dom';
 
 jest.mock('../../../services/sailorMoon-api.jsx');
 
@@ -18,7 +19,10 @@ describe('SailorList component', () => {
       }
     ])
     
-    render(<SailorList />);
+    render(<MemoryRouter>
+        <SailorList />
+      </MemoryRouter> 
+    );
 
     screen.getByText('Loading...');
 

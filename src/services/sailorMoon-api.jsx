@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 const URL = process.env.REACT_APP_API_URL;
 
 export const getSailors = async() => {
-  const res = await fetch(`${URL}sailors`);
+  const res = await fetch(`${URL}/sailors`);
   const json = await res.json();
 
   if(!res.ok) throw 'Unable to fetch';
@@ -20,8 +20,21 @@ export const getSailors = async() => {
   }))
 }
 
-export const addSailor = async() => {
-  
+export const getSailorById = async(id) => {
+  const res = await fetch(`${URL}/sailors/${id}`);
+  const json = await res.json();
+
+  if(!res.ok) throw 'Unable to fetch';
+
+  return {
+    id: json.id,
+    sailorName: json.sailorName,
+    realName: json.realName,
+    description: json.description,
+    attack: json.attack,
+    zodiacSign: json.zodiacSign,
+    imageUrl: json.imageUrl
+  };
 }
 
 // export const getResponse = (url, method, body) => {

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getSailors } from '../services/sailorMoon-api';
+import { getSailors, getSailorById } from '../services/sailorMoon-api';
 
 export const useSailors = () => {
   const [loading, setLoading] = useState(true);
@@ -14,5 +14,21 @@ export const useSailors = () => {
   return {
     loading,
     sailors
+  };
+};
+
+export const useSailorById = (id) => {
+  const [loading, setLoading] = useState(true);
+  const [sailor, setSailor] = useState([]);
+
+  useEffect(() => {
+    getSailorById(id)
+      .then(fetchedSailor => setSailor(fetchedSailor))
+      .finally(() => setLoading(false));
+  }, [id])
+
+  return {
+    loading,
+    sailor
   };
 };
