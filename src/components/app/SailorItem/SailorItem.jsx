@@ -6,7 +6,7 @@ const SailorItem = ({ sailorName, imageUrl }) => {
     <img src={imageUrl} alt={sailorName} />
     <figcaption>{sailorName}</figcaption>
   </figure>
-} 
+}
 
 SailorItem.propTypes = {
   sailorName: PropTypes.string.isRequired,

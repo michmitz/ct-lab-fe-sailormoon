@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component renders Form 1`] = `
+<DocumentFragment>
+  <div
+    class="form-div"
+  >
+    <form
+      class="create-sailor-form"
+    >
+      <div
+        class="sailor-name-box"
+      >
+        <label>
+          Enter your sailor name:
+          <input
+            name="sailor-name"
+            placeholder="Sailor Name"
+            type="text"
+            value="Sailor Mars"
+          />
+        </label>
+      </div>
+      <div
+        class="real-name-box"
+      >
+        <label>
+          Enter your real name:
+          <input
+            name="real-name"
+            placeholder="Real Name"
+            type="text"
+            value="Michelle Stermitz"
+          />
+        </label>
+      </div>
+      <div
+        class="real-name-box"
+      >
+        <label>
+          Give the fans a brief description of yourself:
+          <input
+            name="description"
+            placeholder="Please do not upset the fans"
+            type="text"
+            value="Coolest Sailor Moon character"
+          />
+        </label>
+      </div>
+      <div
+        class="attack-box"
+      >
+        <label>
+          What's your number one "attack"?
+          <input
+            name="attack"
+            placeholder="attack"
+            type="text"
+            value="Dry Sense of Humor"
+          />
+        </label>
+      </div>
+      <div
+        class="zodiac-sign-box"
+      >
+        <label>
+          What's your zodiac sign?
+          <input
+            name="zodiac-sign"
+            placeholder="zodiac sign"
+            type="text"
+            value="Aries"
+          />
+        </label>
+      </div>
+      <div
+        class="image-box"
+      >
+        <label>
+          Paste your image url here. Please keep it appropriate.:
+          <input
+            name="image-url"
+            placeholder=""
+            type="text"
+            value=""
+          />
+        </label>
+      </div>
+      <button
+        data-testid="button"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;

@@ -1,7 +1,7 @@
 import React from 'react';
-import SailorList from './SailorList/SailorList'
+import Form from './Form/Form'
 
 export default function App() {
-  return <SailorList />;
+  return <Form />;
 }
 
