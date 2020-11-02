@@ -21,3 +21,4 @@ const SailorDetail = () => {
 
 export default SailorDetail;
 
+

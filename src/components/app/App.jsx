@@ -6,7 +6,9 @@ import {
 } from 'react-router-dom';
 import Header from './Header/Header'
 import SailorDetail from './SailorDetail/SailorDetail'
-import SailorList from './SailorList/SailorList' 
+import SailorList from './SailorList/SailorList'
+import Form from './Form/Form' 
+import SailorCreator from '../../containers/SailorCreator'
 
 
 export default function App() {
@@ -16,6 +18,7 @@ export default function App() {
       <Switch>
         <Route exact path='/' component={SailorList} />
         <Route exact path='/sailors/:id' component={SailorDetail} />
+        <Route exact path='/sailorcreator' component={SailorCreator} />
       </Switch>
     </Router>
   );

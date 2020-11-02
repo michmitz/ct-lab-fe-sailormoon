@@ -8,11 +8,15 @@ exports[`Header component renders Header 1`] = `
     <h1>
       Sailor Moon Character API
     </h1>
-    ;
     <a
       href="/"
     >
       Home Page
+    </a>
+    <a
+      href="/sailorcreator"
+    >
+      Create A Sailor!
     </a>
   </div>
 </DocumentFragment>

@@ -37,18 +37,11 @@ export const getSailorById = async(id) => {
   };
 }
 
-// export const getResponse = (url, method, body) => {
-//   if(method !== 'GET') {
-//     return fetch(`https://cors-anywhere.herokuapp.com/${url}`, {
-//       method,
-//       headers: {
-//         'Content-Type': 'application/json'
-//       },
-//       body
-//     })
-//       .then(res => res.json())
-//   } else if (method === 'GET') {
-//     return fetch(`https://cors-anywhere.herokuapp.com/${url}`)
-//       .then(res => res.json())
-//   }
-// };
+export const createSailor = (sailorName, realName, description, attack, zodiacSign, imageUrl) => {
+  return fetch(`${URL}/sailors`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ sailorName, realName, description, attack, zodiacSign, imageUrl })
+  }).then(res => res.json())
+};
+

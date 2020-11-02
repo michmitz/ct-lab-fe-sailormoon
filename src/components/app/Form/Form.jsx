@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Form.css';
 
-const Form = ({ sailorName, realName, description, attack, zodiacSign, imageUrl, onChange, onSubmit }) => (
+const Form = ({ sailorName, realName, description, attack, zodiacSign, imageUrl, onChange, onSubmit, successDisplay }) => (
   <div key="form-div-key" className="form-div">
 
       <form onSubmit={onSubmit} className="create-sailor-form">
         <div className="form-header">
-          <h1>Create Your Own Sailor Moon Character!</h1>
+          <h1>Create Your Own Sailor!</h1>
         </div>
 
         <div className="sailor-name-box">
           <label>Enter your home planet, star or moon:
             <input 
               type="text" 
-              name="sailor-name" 
+              name="sailorName" 
               placeholder="ex. Deimos" 
               value={sailorName} 
               onChange={onChange} />
@@ -24,7 +25,7 @@ const Form = ({ sailorName, realName, description, attack, zodiacSign, imageUrl,
           <label>Enter your real name:
             <input 
               type="text" 
-              name="real-name" 
+              name="realName" 
               placeholder="" 
               value={realName} 
               onChange={onChange} />
@@ -57,7 +58,7 @@ const Form = ({ sailorName, realName, description, attack, zodiacSign, imageUrl,
           <label>What's your zodiac sign?
             <input 
               type="text" 
-              name="zodiac-sign" 
+              name="zodiacSign" 
               placeholder="" 
               value={zodiacSign} 
               onChange={onChange} />
@@ -68,7 +69,7 @@ const Form = ({ sailorName, realName, description, attack, zodiacSign, imageUrl,
           <label>Paste your image url here:
             <input 
               type="text" 
-              name="image-url" 
+              name="imageUrl" 
               placeholder="" 
               value={imageUrl} 
               onChange={onChange} />
@@ -77,6 +78,10 @@ const Form = ({ sailorName, realName, description, attack, zodiacSign, imageUrl,
 
         <button data-testid="form-button">Submit</button>
       </form>
+
+      <div data-testid="success-display">
+        <p>{successDisplay}</p>
+      </div>
 
   </div>
 );
@@ -87,6 +92,7 @@ Form.propTypes = {
   description: PropTypes.string.isRequired,
   attack: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
+  successDisplay: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired
 };

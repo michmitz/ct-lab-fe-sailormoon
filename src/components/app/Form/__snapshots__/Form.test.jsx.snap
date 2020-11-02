@@ -12,7 +12,7 @@ exports[`Form component renders Form 1`] = `
         class="form-header"
       >
         <h1>
-          Create Your Own Sailor Moon Character!
+          Create Your Own Sailor!
         </h1>
       </div>
       <div
@@ -21,7 +21,7 @@ exports[`Form component renders Form 1`] = `
         <label>
           Enter your home planet, star or moon:
           <input
-            name="sailor-name"
+            name="sailorName"
             placeholder="ex. Deimos"
             type="text"
             value="Sailor Neptune"
@@ -34,7 +34,7 @@ exports[`Form component renders Form 1`] = `
         <label>
           Enter your real name:
           <input
-            name="real-name"
+            name="realName"
             placeholder=""
             type="text"
             value="Michiru Kaiou"
@@ -73,7 +73,7 @@ exports[`Form component renders Form 1`] = `
         <label>
           What's your zodiac sign?
           <input
-            name="zodiac-sign"
+            name="zodiacSign"
             placeholder=""
             type="text"
             value="Pisces"
@@ -86,7 +86,7 @@ exports[`Form component renders Form 1`] = `
         <label>
           Paste your image url here:
           <input
-            name="image-url"
+            name="imageUrl"
             placeholder=""
             type="text"
             value=""
@@ -99,6 +99,11 @@ exports[`Form component renders Form 1`] = `
         Submit
       </button>
     </form>
+    <div
+      data-testid="success-display"
+    >
+      <p />
+    </div>
   </div>
 </DocumentFragment>
 `;
