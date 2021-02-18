@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component renders Form 1`] = `
+<DocumentFragment>
+  <div
+    class="form-div"
+  >
+    <form
+      class="create-sailor-form"
+    >
+      <div
+        class="form-header"
+      >
+        <h1>
+          Create Your Own Sailor!
+        </h1>
+      </div>
+      <div
+        class="sailor-name-box"
+      >
+        <label>
+          Enter your home planet, star or moon:
+          <input
+            name="sailorName"
+            placeholder="ex. Deimos"
+            type="text"
+            value="Sailor Neptune"
+          />
+        </label>
+      </div>
+      <div
+        class="real-name-box"
+      >
+        <label>
+          Enter your real name:
+          <input
+            name="realName"
+            placeholder=""
+            type="text"
+            value="Michiru Kaiou"
+          />
+        </label>
+      </div>
+      <div
+        class="description-box"
+      >
+        <label>
+          Give the fans a brief description of yourself:
+          <input
+            name="description"
+            placeholder=""
+            type="text"
+            value="Michiru is exactly what a fairy tale princess would be like."
+          />
+        </label>
+      </div>
+      <div
+        class="attack-box"
+      >
+        <label>
+          What's your number one "attack"?
+          <input
+            name="attack"
+            placeholder="ex. Dead Scream"
+            type="text"
+            value="Deep Submerge"
+          />
+        </label>
+      </div>
+      <div
+        class="zodiac-sign-box"
+      >
+        <label>
+          What's your zodiac sign?
+          <input
+            name="zodiacSign"
+            placeholder=""
+            type="text"
+            value="Pisces"
+          />
+        </label>
+      </div>
+      <div
+        class="image-box"
+      >
+        <label>
+          Paste your image url here:
+          <input
+            name="imageUrl"
+            placeholder=""
+            type="text"
+            value=""
+          />
+        </label>
+      </div>
+      <button
+        data-testid="form-button"
+      >
+        Submit
+      </button>
+    </form>
+    <div
+      data-testid="success-display"
+    >
+      <p />
+    </div>
+  </div>
+</DocumentFragment>
+`;

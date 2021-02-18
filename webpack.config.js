@@ -7,7 +7,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 const env = Object.entries({ ...require('dotenv').config(), ...process.env })
   .reduce((acc, [key, value]) => {
-    acc[`process.env.${key}`] = value;
+    acc[key] = value;
     return acc;
   }, {});
 
